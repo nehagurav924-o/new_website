@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <title>
+            Paw Haven 
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                padding:10px;
+                background-color:#E8F5E9;
+            }
+            .container{
+                width:100%;
+                border:2px solid #CFE3DC;;
+            }
+            .header{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                padding:15px;
+                border-bottom:2px solid #CFE3DC;
+                background-color: #2A9D8F;
+                color:white;
+            }
+            .logo{
+                width:60px;
+                height:60px;
+                text-align: center;
+                line-height: 60px;
+                background-color:#FAF9F6;
+                color:#2A9D8F;
+               font-weight:bold;
+
+            }
+            .menu
+            {
+                width:600px;
+                height:50px;
+                text-align:center;
+                line-height:40px;
+                background-color:transparent;
+
+            }
+            .menu li{
+                display:inline;
+                margin-left:20px;
+            }
+            .menu a
+            {
+                text-decoration: none;
+                font-weight:bold;
+                font-size:20px;
+                color:white;
+            }
+            .menu a:hover
+            {
+                color:#F4A261;
+            }
+            .banner{
+                height:350px;
+                background: linear-gradient(135deg, #A8DADC, #E8F5E9);
+                color:#264653;
+                background-image:url("banner_img.jpg"); 
+                border-bottom: 2px solid #000;
+                background-image:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                position:relation;
+                background-size:100% 100%;
+                
+
+
+            }
+            .main-content{
+    text-align:center;
+    padding:30px;
+}
+            
+            .banner-content{
+              position:relative;
+              z-index:1;
+               color:white;
+             }
+             .banner-content h1{
+               font-size:42px;
+               margin-bottom:10px;
+             }
+             .banner-content p{
+                font-size:22px;
+              font-style:italic;
+              margin-bottom:20px;
+        
+            }
+            .adopt-btn{
+             display:inline-block;
+             padding:12px 28px;
+            background-color:#F4A261;
+           color:white;
+            text-decoration:none;
+             border-radius:30px;
+             font-weight:bold;
+             font-size:18px;
+             
+             }
+
+            .adopt-btn:hover{
+             background-color:#d8846f;
+             
+            }
+
+           .process-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.process-box{
+    width:220px;
+    background:#E8F5E9;
+    border:2px solid #CFE3DC;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+
+.process-box h3{
+    color:#2A9D8F;
+    margin-bottom:10px;
+}
+
+.process-box p{
+    color:#264653;
+    font-size:14px;
+}
+           .footer-boxes{
+                display:flex;
+                justify-content: space-around;
+                padding:20px;
+                border-bottom:2px solid #000;
+                flex-wrap:wrap;
+                    gap:15px;
+
+            }
+            .footer-box{
+    
+    height:120px;
+    border:2px solid #000;
+    background-color:#2A9D8F;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:22%;
+
+    padding:10px;
+}
+            .footer-box h3{
+    margin:0 0 8px 0;
+    color:rgb(19, 18, 18);
+    font-size:18px;
+    font-weight:bold;
+}
+           .footer-box p{
+    margin:0;
+    color:#F5F5F5;
+    font-size:14px;
+    line-height:1.4;
+}            
+             .btn-center{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+            .copyright{
+                text-align: center;
+                padding :15px;
+                background-color:#E8F5E9;
+                color:#264653;
+
+            }
+
+            @media(max-width:760px){
+                .content{
+                    flex-direction: column;
+
+                }
+                .left,.right{
+                width:100%;
+
+                }
+                .footer-boxes{
+                    flex-wrap:wrap;
+                    gap:15px;
+                }
+                .footer-box{
+                    width:48%;
+
+                }
+            }
+                @media(max-width:470px){
+                    .header{
+                        flex-direction: column;
+                        gap:15px;
+                    }
+                    .menu{
+                        width:100%;
+
+                    }
+                    .footer-box{
+                        width:100%;
+                    }
+                    .banner{
+                        height: 120px;
+                        font-size:18px;
+                    }
+
+                }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="pet_doc.png"class="logo">
+
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index_.html">Home</a></li>                        <li><a href="about.html">About Us</a></li>                        <li><a href="pets.html">Our pets</a></li>
+                        <li><a href="adoption.html">Adoption</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+           <div class="banner-content">
+                  <h1>Adopt,don't shop.</h1>
+                  <p>"Every paw deserves a loving home."</p>
+                  <p><a href="adoption.html" class="adopt-btn">Adopt Now</a></p>
+           </div>
+           </div>
+            
+                <div class="main-content">
+
+    <h2 class="cls">Adoption Process 🏡</h2>
+
+    <div class="process-container">
+
+        <div class="process-box">
+            <h3>🐾 Step 1</h3>
+            <p>Browse available pets and choose your perfect companion.</p>
+        </div>
+        <br>
+
+        <div class="process-box">
+            <h3>📋 Step 2</h3>
+            <p>Fill out a quick adoption application form.</p>
+        </div>
+
+        <div class="process-box">
+            <h3>🤝 Step 3</h3>
+            <p>Meet and spend time with your chosen pet.</p>
+        </div>
+
+        <div class="process-box">
+            <h3>🏠 Step 4</h3>
+            <p>Complete adoption and welcome them home.</p>
+        </div>
+
+    </div>
+     
+     <div class="btn-center">
+    <a href="contact.html" class="adopt-btn">Apply for Adoption</a>
+     </div>
+</div>
+
+            <div class="footer-boxes">
+                <div class="footer-box"> 
+                       <h3>Our Mission 🐾</h3>
+                       <p>Giving every pet a second chance.</p>
+                 </div>
+
+                <div class="footer-box">
+                    <h3>Forever Homes 🏡</h3>
+                    <p>Matching pets with caring families.</p>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Pet Wellness 🩺</h3>
+                    <p>Health, safety, and happiness first.</p>
+                </div>
+
+                <div class="footer-box">
+                       <h3> Happy Tails 🎉</h3>
+                       <p>200+ pets have found loving forever homes through Paw Haven.</p>
+ 
+
+                </div>
+            </div>
+            <div class="copyright">© 2026 Paw Haven | Giving Every Pet a Loving Home 🐾
+</div>
+            
+        </div>
+    </body>
+</html>
+            
+            
